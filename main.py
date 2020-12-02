@@ -10,10 +10,8 @@ perm = permutations(city, Days)
 
 
 def temp_func(t):
-    s = 0
-    for i in t:
-        s += max(city_temp[i])
-    return s
+    return sum([city_temp[t][i][i]for i in range(len t) ])/len(t)
+
 
 best_route = max(perm, key=lambda t: temp_func(t))
 avg_temp = (temp_func(best_route)/Days)
