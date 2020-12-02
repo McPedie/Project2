@@ -1,4 +1,3 @@
-
 from itertools import permutations,  combinations_with_replacement
 
 # City temps
