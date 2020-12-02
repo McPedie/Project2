@@ -41,7 +41,7 @@ best_option = min(combs, key=lambda t: Budget - cost_route(t) if Budget >= cost_
 
 print ("Youre going on a trip, here is the best possible outcome: \n")
 
-print ("Your best route is:", str(best_route).replace("(","").replace(")", "").replace(","," ->").replace("'",""), "With an average tempature of:", cost_temp(best_route), "\n")
+print ("Your best route is:", str(best_route).replace("(","").replace(")", "").replace(","," ->").replace("'",""), "With an average tempature of:", cost_temp(best_route), "F", "\n")
 
 print ("To get close to your budget of $",Budget, "spend: $",cost_route(best_option),"at these hotels:",str(best_option).replace("(","").replace(")", "").replace(","," ->").replace("'",""))
 
